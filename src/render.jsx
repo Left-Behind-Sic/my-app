@@ -6,11 +6,11 @@ import App from './App';
 
 
 
-export let rerenderEntireTree = (events, newPostText) => {
+export let rerenderEntireTree = (events) => {
 
   ReactDOM.render(
     <React.StrictMode>
-      <App events={events} newPostText= {newPostText} />
+      <App events={events} />
     </React.StrictMode>,
     document.getElementById('root')
   );
