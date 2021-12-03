@@ -9,6 +9,10 @@ import events from './components/Items/events.json';
 
 function App(props) {
 
+  let rerenderEntireTree = () => {
+    console.log('manipulation');
+  }
+
   let newData = {
     name: '',
     date: "14.09.2019",
