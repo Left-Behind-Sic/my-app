@@ -1,0 +1,18 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+
+
+
+
+export let rerenderEntireTree = (events, newPostText) => {
+
+  ReactDOM.render(
+    <React.StrictMode>
+      <App events={events} newPostText= {newPostText} />
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+}
+

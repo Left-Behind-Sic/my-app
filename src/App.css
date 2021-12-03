@@ -1,0 +1,13 @@
+.App {
+  margin: 5%;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.App .content {
+  padding: 6.25%;
+}
+
+.App-link {
+  color: #61dafb;
+}

@@ -1,0 +1,59 @@
+.item {
+    position: relative;
+    margin-bottom: 2.5%;
+    
+}
+
+.sizedImg {
+    height: 100%;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 66px;
+    font-style: normal;
+}
+
+.item .top_left {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.bordered {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 78px;
+    width: 78px;
+    border: #fff 1px solid;
+    border-radius: 6px;
+    font-style: normal;
+}
+
+a.bordered {
+    font-weight: normal;
+}
+
+.item .bot_left {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.item .top_right a {
+    line-height: 18px;
+}
+
+
+.item .top_right {
+    position: absolute;
+    line-height: 20px;
+    top: 5%;
+    right: 5%;
+}
