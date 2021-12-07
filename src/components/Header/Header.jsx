@@ -1,35 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import cl from './Header.module.css'
 
 
 const Header = (props) => {
-
-
-    let select = React.createRef();
-
-    let change = () => {
-        console.log(select.current.selected)
-    }
-
-    const [selects] = useState();
-
-    let sel = (e) => {
-        console.log(e.target.value);
-    }
-
     return (
         <header className={cl.header}>
             <h1>Event Listing</h1>
             <div className={cl.select}>
                 <ul>
                     <li>
-                        City: <select name="select" id="">
-                            <option selected="selected">  Amsterdam </option>
+                        City: <select onChange={props.sel} >
+                            <option value="Amsterdam" >Amsterdam </option>
+                            <option value="Berlin" >Berlin </option>
+                            <option value="Rim" >Rim </option>
+                            <option value="St.Petersburg" >St.Petersburg </option>
                         </select>
                     </li>
                     <li>
                         Month:
-                        <select ref={select} value={selects} onChange={sel}>
+                        <select onChange={props.sel}>
                             <option value="09" >September</option>
                             <option value="10" >October</option>
                             <option value="11" >November</option>
@@ -43,7 +32,7 @@ const Header = (props) => {
                             <option value="07" >July</option>
                             <option value="08" >August</option>
                         </select>
-                        <button onClick={change}>Alert</button>
+                        <button>Alert</button>
                     </li>
                 </ul>
 
