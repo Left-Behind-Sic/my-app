@@ -1,15 +1,16 @@
-import React from "react";
 import cl from './Header.module.css'
 
 
 const Header = (props) => {
+
+
     return (
         <header className={cl.header}>
             <h1>Event Listing</h1>
             <div className={cl.select}>
                 <ul>
                     <li>
-                        City: <select onChange={props.sel} >
+                        City: <select onChange={props.selC} >
                             <option value="Amsterdam" >Amsterdam </option>
                             <option value="Berlin" >Berlin </option>
                             <option value="Rim" >Rim </option>
@@ -32,7 +33,6 @@ const Header = (props) => {
                             <option value="07" >July</option>
                             <option value="08" >August</option>
                         </select>
-                        <button>Alert</button>
                     </li>
                 </ul>
 
