@@ -15,4 +15,3 @@ export let rerenderEntireTree = (events) => {
     document.getElementById('root')
   );
 }
-

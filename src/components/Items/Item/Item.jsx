@@ -15,7 +15,7 @@ const Item = (props) => {
                 <a> {props.name} </a>
             </div>
             <div className={ItemClass.top_right}>
-                <a> <img src="../images/vector.png"  /> </a>
+                <a> <img src="../images/vector.png" /> </a>
             </div>
         </div>
     )
